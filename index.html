@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Frequency Analyzer</title>
+</head>
+<body>
+    <h1>Word Frequency Analyzer</h1>
+    <form id="urlForm">
+        <label for="url">Enter URL:</label>
+        <input type="url" id="url" required placeholder="https://example.com">
+        <button type="submit">Analyze</button>
+    </form>
+
+    <div id="results" style="display: none;">
+        <h2>Top Words Frequency</h2>
+        <table id="frequencyTable" border="1">
+            <thead>
+                <tr>
+                    <th>Word</th>
+                    <th>Frequency</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Results will be populated here -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
